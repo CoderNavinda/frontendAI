@@ -18,7 +18,7 @@ const [messageError, setMessageError] = useState('');
   
   const handleContactusBackend = async (email, name,message) => {
     try {
-      const response = await axios.post('http://127.0.0.1:12000/api/contactus', {
+      const response = await axios.post('http://54.172.121.215/api/contactus', {
         email: email,
         name: name,
         message:message,
