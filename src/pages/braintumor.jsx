@@ -131,7 +131,7 @@ function Braintumor() {
         formData.append('file', selectedFile);
   
         // Make a POST request to the backend with the file data
-        axios.post('http://127.0.0.1:12000/api/upload', formData)
+        axios.post('tumorai.duckdns.org/api/upload', formData)
           .then((response) => {
             // Handle success
             console.log('File uploaded successfully:', response.data);

@@ -59,7 +59,7 @@ function Login() {
       // Make an API request to your Flask server to notify it of the user's login
       // You can use a library like Axios to make the request.
       // Include the idToken in the request headers.
-      await axios.post('http://54.172.121.215/api/login', { idToken });
+      await axios.post('tumorai.duckdns.org/api/login', { idToken });
   
       console.log('User logged in:', user);
       navigate('/dashboard', { replace: true });
