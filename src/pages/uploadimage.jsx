@@ -116,7 +116,7 @@ function SkinCancer() {
         formData.append('file', selectedFile);
   
         // Make a POST request to the backend with the file data
-        axios.post('tumorai.duckdns.org/api/skincancer', formData)
+        axios.post('https://tumorai.duckdns.org/api/skincancer', formData)
           .then((response) => {
             // Handle success
             console.log('File uploaded successfully:', response.data);

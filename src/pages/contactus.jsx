@@ -18,7 +18,7 @@ const [messageError, setMessageError] = useState('');
   
   const handleContactusBackend = async (email, name,message) => {
     try {
-      const response = await axios.post('tumorai.duckdns.org/api/contactus', {
+      const response = await axios.post('https://tumorai.duckdns.org/api/contactus', {
         email: email,
         name: name,
         message:message,

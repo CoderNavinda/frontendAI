@@ -14,7 +14,7 @@ function Braintumor() {
 
   useEffect(() => {
     // Check if the user is authenticated
-    axios.get('http://54.172.121.215/api/upload')
+    axios.get('https://tumorai.duckdns.org/api/upload')
       .then((response) => {
         const isUserAuthenticated = response.data.authenticated;
         console.log(response.data)
